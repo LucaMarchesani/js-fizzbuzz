@@ -13,9 +13,14 @@ Proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro program
 
 // voglio stampare in console i numeri da 1 a 100
 for (let i = 1; i <= 100; i++){
+
+    // se sono multipli di entrambi stampo in console FizzBuzz
+    if (i % 3 === 0 && i % 5 === 0){
+        console.log("FizzBuzz");
+    }
     
-    // se multipli di 3 al posto del numero stampo in console Fizz
-    if ((i % 3) === 0){
+    // altrimenti se multipli di 3 al posto del numero stampo in console Fizz
+    else if ((i % 3) === 0){
         console.log("Fizz");
     }
 
@@ -24,11 +29,9 @@ for (let i = 1; i <= 100; i++){
         console.log("Buzz");
     }
 
-    // altrimenti se sono multipli di entrambi stampo in console FizzBuzz
-
+    // altrimenti stampa il numero
     else{
         console.log(i);
     }
-    
 }
 
